@@ -1,5 +1,6 @@
 ---
-import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 const identity = {
   firstName: "Vovchik",
@@ -47,7 +48,7 @@ const textCase = "uppercase";
     </style>
 	</head>
 	<body>
-		<Navigation />
+		<Header />
 <h1>Обо мне</h1>
 <h2>... и моем новом сайте на Astro!</h2>
   <h1>Мой сайт на Astro</h1>
@@ -75,5 +76,6 @@ const textCase = "uppercase";
 {finished && <p>Я завершил(а) это руководство!</p>}
 
 {goal === 3 ? <p>Моя цель — завершить за 3 дня.</p> : <p>Моя цель — не 3 дня.</p>}
+  <Footer />
 </body>
 </html>
