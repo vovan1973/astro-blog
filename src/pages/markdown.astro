@@ -12,10 +12,11 @@ const  pageTitle  = "Markdown";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<h1>Markdown</h1>
+		<h1>Markdown preview</h1>
     <main class="container" id="container">
-      <textarea id="source" cols="80" rows="20" class="source"></textarea>
-
-
+      <textarea id="source" cols="30" rows="30" class="source"></textarea>
+      <div id="divider" class="divider"></div>
+      <div id="preview" class="preview"></div>
     </main>
+    <script type="module" src="/scripts/markdown.js"></script>
 	</body>
