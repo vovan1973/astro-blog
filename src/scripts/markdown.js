@@ -7,6 +7,6 @@ const divider= document.querySelector('#divider');
 
 // создаем событие при движении мыши
 source.addEventListener('input', () => {
-      const newText= marked.parse(source.value);
+      const newText= window.marked.parse(source.value);
       preview.innerHTML= newText;
 });
