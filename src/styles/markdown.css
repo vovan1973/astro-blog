@@ -32,3 +32,32 @@ body {
   cursor: col-resize;
 
 }
+
+.source {
+  width: calc(50% - 1px);
+  height: 100%;
+  overflow: auto;
+  padding: 12px;
+  resize: none;
+  border: none;
+  font-size: 1.2em;
+  background-color: white;
+
+}
+
+.source:focus {
+  outline: none;
+}
+
+.preview {
+  width: calc(50% - 1px);
+  height: 100%;
+  overflow: auto;
+  padding: 12px;
+  border: none;
+  background-color: whitesmoke;
+}
+
+.preview  {
+  margin-top: 0;
+}
