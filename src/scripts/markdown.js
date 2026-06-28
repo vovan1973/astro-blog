@@ -1,4 +1,6 @@
 
+
+import { marked } from 'marked';
 // делаем виборку
 const container= document.querySelector('#container');
 const source= document.querySelector('#source');
@@ -7,6 +9,6 @@ const divider= document.querySelector('#divider');
 
 // создаем событие при движении мыши
 source.addEventListener('input', () => {
-      const newText= window.marked.parse(source.value);
+      const newText= marked.parse(source.value);
       preview.innerHTML= newText;
 });
