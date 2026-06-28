@@ -11,6 +11,7 @@ const  pageTitle  = "Markdown";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
 	</head>
 	<body>
 		<h1>Markdown preview</h1>
@@ -19,5 +20,6 @@ const  pageTitle  = "Markdown";
       <div id="divider" class="divider"></div>
       <div id="preview" class="preview"></div>
     </main>
-    <script type="module" src="/scripts/markdown.js"></script>
+    <script type="module" src="src/scripts/markdown.js"></script>
 	</body>
+</html>
