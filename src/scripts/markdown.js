@@ -6,7 +6,7 @@ const preview= document.querySelector('#preview');
 const divider= document.querySelector('#divider');
 
 // создаем событие при движении мыши
-source.addEventListener('keyup', () => {
+source.addEventListener('input', () => {
       const newText= marked.parse(source.value);
       preview.innerHTML= newText;
 });
